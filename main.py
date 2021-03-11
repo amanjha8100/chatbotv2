@@ -1,8 +1,5 @@
 from nltk.chat.util import Chat,reflections
-pairs=[
-    ['my name is (.*)',['hello %1 , how are you doing today?']],
-    ['bye',['Bye,It was nice conversing with you']],
-]
+from trainer import responsepair as pairs
 def chatbot():
     print("Hi, I am your first chatbot ,pretty basic one!")
     chat=Chat(pairs,reflections)
